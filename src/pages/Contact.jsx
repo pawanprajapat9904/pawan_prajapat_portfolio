@@ -3,11 +3,9 @@ import { Mail, Send, Github, Linkedin } from "lucide-react";
 
 export const Contact = () => (
   <div className="relative bg-gradient-to-b from-black via-gray-900 to-black text-gray-300 py-16 px-6 md:px-12 overflow-hidden">
-    {/* Glowing Background Overlay */}
     <div className="absolute inset-0 bg-gradient-to-r from-yellow-900/10 via-transparent to-yellow-900/10 blur-2xl"></div>
 
     <div className="max-w-5xl mx-auto relative z-10">
-      {/* Header */}
       <div className="text-center mb-12">
         <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-200 font-lora tracking-wide mb-4">
           Get In Touch
@@ -17,9 +15,7 @@ export const Contact = () => (
         </p>
       </div>
 
-      {/* Contact Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
-        {/* Left Info */}
         <div className="space-y-8">
           <div>
             <h3 className="text-2xl font-semibold text-yellow-400 font-lora mb-6">Contact Information</h3>
@@ -51,7 +47,6 @@ export const Contact = () => (
           </div>
         </div>
 
-        {/* Right Form */}
         <form
           onSubmit={(e) => e.preventDefault()}
           className="bg-gray-900/40 border border-gray-800 rounded-2xl p-8 backdrop-blur-md shadow-lg hover:shadow-yellow-900/20 transition-all duration-300"

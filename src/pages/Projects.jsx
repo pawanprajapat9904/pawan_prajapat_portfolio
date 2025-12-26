@@ -1,7 +1,6 @@
 import React from 'react';
 import { Github, Code, Layers } from 'lucide-react';
 
-// 🎨 Custom Styles (same as About Me)
 const CustomStyles = () => (
   <style>
     {`
@@ -33,7 +32,6 @@ const CustomStyles = () => (
   </style>
 );
 
-// 🧱 Single Project Card
 const ProjectCard = ({ title, description, imgSrc, tags, liveUrl, githubUrl }) => (
   <div className="bg-gray-900 border border-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-indigo-600/40 animate-slide-in-up">
     <img src={imgSrc} alt={title} className="w-full h-48 object-cover opacity-90 hover:opacity-100 transition" />
@@ -62,7 +60,6 @@ const ProjectCard = ({ title, description, imgSrc, tags, liveUrl, githubUrl }) =
   </div>
 );
 
-// 🧩 Section Title (same style as About)
 const SectionTitle = ({ icon, title }) => (
   <div className="flex items-center mb-8">
     {icon}
@@ -134,13 +131,11 @@ const Projects = () => {
       <div className="bg-black text-gray-300 font-inter p-10  shadow-xl animate-fade-in ">
         <div className="max-w-7xl mx-auto">
 
-          {/* --- Section Title --- */}
           <div className="flex items-center justify-center mb-12">
             <Code className="w-8 h-8 text-indigo-500 mr-3" />
             <h1 className="text-4xl font-bold text-white font-lora">My Projects</h1>
           </div>
 
-          {/* --- Basic Projects --- */}
           <section className="mb-16 animate-slide-in-up" style={{ animationDelay: '300ms' }}>
             <SectionTitle
               icon={<Layers className="w-6 h-6 text-indigo-500" />}
@@ -153,7 +148,6 @@ const Projects = () => {
             </div>
           </section>
 
-          {/* --- Medium Projects --- */}
           <section className="mb-16 animate-slide-in-up" style={{ animationDelay: '600ms' }}>
             <SectionTitle
               icon={<Layers className="w-6 h-6 text-indigo-500" />}
@@ -166,7 +160,7 @@ const Projects = () => {
             </div>
           </section>
 
-          {/* --- Major Projects --- */}
+
           <section className="animate-slide-in-up" style={{ animationDelay: '900ms' }}>
             <SectionTitle
               icon={<Layers className="w-6 h-6 text-indigo-500" />}

@@ -73,7 +73,6 @@ const AboutMe = () => (
     <div className="bg-black text-gray-300 font-inter animate-fade-in p-8  shadow-xl ">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16">
 
-        {/* --- LEFT COLUMN (BIO CARD) --- */}
         <div className="lg:col-span-1 animate-slide-in-up" style={{ animationDelay: '100ms' }}>
           <div className="bg-gray-900 mt-15 border border-gray-800 rounded-lg shadow-lg p-8 sticky top-28">
             <img
@@ -111,10 +110,8 @@ const AboutMe = () => (
           </div>
         </div>
 
-        {/* --- RIGHT COLUMN (DETAILS) --- */}
         <div className="lg:col-span-2">
 
-          {/* --- About Me Section --- */}
           <section className="mb-12 animate-slide-in-up" style={{ animationDelay: '300ms' }}>
             <SectionTitle
               icon={<User className="w-7 h-7 text-gray-500" />}
@@ -125,7 +122,6 @@ const AboutMe = () => (
             </p>
           </section>
 
-          {/* --- Philosophy Section --- */}
           <section className="mb-12 animate-slide-in-up" style={{ animationDelay: '500ms' }}>
             <SectionTitle
               icon={<Heart className="w-7 h-7 text-gray-500" />}
@@ -136,7 +132,6 @@ const AboutMe = () => (
             </p>
           </section>
 
-          {/* --- Skills Section --- */}
           <section className="mb-12 animate-slide-in-up" style={{ animationDelay: '700ms' }}>
             <SectionTitle
               icon={<Layers className="w-7 h-7 text-gray-500" />}
@@ -176,7 +171,6 @@ const AboutMe = () => (
             </div>
           </section>
 
-          {/* --- Learning Section --- */}
           <section className="animate-slide-in-up" style={{ animationDelay: '900ms' }}>
             <SectionTitle
               icon={<Brain className="w-7 h-7 text-gray-500" />}

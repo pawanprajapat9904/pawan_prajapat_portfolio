@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Mail, Linkedin, Github, Download } from "lucide-react";
 import resumeFile from "../assets/Pawan_Prajapat_Resume.pdf";
 
-// 🧠 Mathematical Dynamic Background
 const FuturisticMathBackground = () => {
   const canvasRef = useRef(null);
 
@@ -46,7 +45,6 @@ const FuturisticMathBackground = () => {
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         ctx.fill();
 
-        // Connect lines between nearby points
         for (let q of particles) {
           const dx = p.x - q.x;
           const dy = p.y - q.y;
@@ -84,7 +82,6 @@ const FuturisticMathBackground = () => {
   );
 };
 
-// 🪄 Styles
 const FuturisticStyles = () => (
   <style>
     {`

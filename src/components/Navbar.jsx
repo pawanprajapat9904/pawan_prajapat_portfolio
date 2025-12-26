@@ -46,18 +46,16 @@ const Navbar = () => {
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b border-gray-700/30
         ${scrolling
-          ? 'bg-black/60 backdrop-blur-xl shadow-[0_0_30px_rgba(138,43,226,0.3)]'
-          : 'bg-black backdrop-blur-sm'
-        }`}
+            ? 'bg-black/60 backdrop-blur-xl shadow-[0_0_30px_rgba(138,43,226,0.3)]'
+            : 'bg-black backdrop-blur-sm'
+          }`}
       >
-        {/* Animated background effect behind navbar */}
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <div className="absolute top-0 left-0 w-[150%] h-[150%] bg-gradient-to-r from-indigo-600 via-purple-700 to-pink-500 opacity-10 animate-[spin_15s_linear_infinite] rounded-full blur-3xl"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            {/* Logo */}
             <div className="flex items-center space-x-3">
               <div className="w-8 h-8 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg shadow-lg shadow-indigo-500/50 animate-pulse"></div>
               <span className="text-2xl font-bold text-white tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
@@ -65,14 +63,12 @@ const Navbar = () => {
               </span>
             </div>
 
-            {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-6">
               {navItems.map((item) => (
                 <NavLinkItem key={item.page} {...item} onClick={() => setIsMenuOpen(false)} />
               ))}
             </div>
 
-            {/* Mobile Menu Toggle */}
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -84,7 +80,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-black/80 backdrop-blur-xl border-t border-gray-700/50 animate-fadeIn">
             <div className="px-4 pt-3 pb-4 space-y-2">
@@ -96,7 +91,6 @@ const Navbar = () => {
         )}
       </nav>
 
-      {/* Spacer to avoid content overlap */}
       <div className="h-16"></div>
     </>
   );
