@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight, Calendar, Zap, Moon } from "lucide-react";
 import { motion } from "framer-motion";
 
-/* ======================================================
-   THEME CONTEXT
-====================================================== */
+
 const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
@@ -31,9 +29,7 @@ const ThemeProvider = ({ children }) => {
 
 const useTheme = () => useContext(ThemeContext);
 
-/* ======================================================
-   GLOBAL STYLES (BLACK BACKGROUND FIXED)
-====================================================== */
+
 const GlobalStyles = () => (
   <style>{`
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=DM+Serif+Display&display=swap');
@@ -68,9 +64,7 @@ const GlobalStyles = () => (
   `}</style>
 );
 
-/* ======================================================
-   THEME TOGGLE BUTTON
-====================================================== */
+
 const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme();
 
@@ -93,9 +87,6 @@ const ThemeToggle = () => {
   );
 };
 
-/* ======================================================
-   BLOG CARD
-====================================================== */
 const BlogCard = ({ title, excerpt, date, image, tags }) => (
   <motion.div
     whileHover={{ y: -12, rotateY: 6 }}
@@ -149,9 +140,7 @@ const BlogCard = ({ title, excerpt, date, image, tags }) => (
   </motion.div>
 );
 
-/* ======================================================
-   BLOG SECTION
-====================================================== */
+
 export const Blog = () => {
   const posts = [
     {
@@ -200,9 +189,7 @@ export const Blog = () => {
   );
 };
 
-/* ======================================================
-   APP ROOT
-====================================================== */
+
 export default function App() {
   return (
     <ThemeProvider>
