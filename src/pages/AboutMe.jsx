@@ -1,7 +1,6 @@
 import React from 'react';
 import { User, Briefcase, Brain, Code, Heart, Layers, Database, MapPin, Coffee, Zap } from 'lucide-react';
 
-// Custom styles for this page, consistent with the theme
 const CustomStyles = () => (
   <style>
     {`
@@ -43,14 +42,12 @@ const CustomStyles = () => (
   </style>
 );
 
-// Re-usable component for a single skill
 const SkillPill = ({ name }) => (
   <div className="bg-gray-800 text-gray-300 py-1.5 px-4 rounded-full text-sm font-medium border border-gray-700">
     {name}
   </div>
 );
 
-// Re-usable component for a section title
 const SectionTitle = ({ icon, title }) => (
   <div className="flex items-center mb-6">
     {icon}
@@ -58,7 +55,6 @@ const SectionTitle = ({ icon, title }) => (
   </div>
 );
 
-// Re-usable component for info with an icon
 const InfoItem = ({ icon, text }) => (
   <div className="flex items-center text-gray-400">
     {icon}
