@@ -218,7 +218,7 @@ export const HomePage = () => (
         className="profile-img"
       />
 
-      <h1 className="name-title">Pawan Prajapt</h1>
+      <h1 className="name-title">Pawan Prajapat</h1>
       <h2 className="subtitle">Full Stack Developer</h2>
 
       <p className="about-text">
@@ -240,7 +240,7 @@ export const HomePage = () => (
         <a href="mailto:pawan.prajapat9904@gmail.com"><Mail className="w-7 h-7" /></a>
       </div>
 
-      <footer>© 2025 - Pawan Prajapt</footer>
+      <footer>© 2025 - Pawan Prajapat</footer>
     </div>
   </>
 );

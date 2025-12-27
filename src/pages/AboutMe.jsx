@@ -82,7 +82,7 @@ const AboutMe = () => (
             />
             <div className="text-center mt-6">
               <h1 className="text-3xl font-bold text-white font-lora">
-                Pawan Prajapt
+                Pawan Prajapat
               </h1>
               <p className="text-xl text-gray-400 mt-2 mb-6">
                 Full Stack Developer
